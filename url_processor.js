@@ -12,6 +12,7 @@ function processUrl(){
             break
     }
     const date = new Date(Number(arr.join('')))
+    document.getElementById('link').value = ""
     if (date.getTime() == 0){
         document.getElementById("date").textContent = "Invalid Link"
     }
